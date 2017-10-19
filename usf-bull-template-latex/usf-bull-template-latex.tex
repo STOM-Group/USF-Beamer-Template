@@ -73,7 +73,8 @@
 
 
 
-\setbeamercovered{transparent}
+\setbeamercovered{transparent} % delete this line, if you don't want next items shown transparent in "animations"
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,6 +155,8 @@
 \newcommand{\red}[1]{{\color{red}#1}}
 \newcommand{\blue}[1]{{\color{blue}#1}}
 \newcommand{\green}[1]{{\color{green!60!black}#1}}
+
+\usepackage{mwe}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -180,7 +183,7 @@
 \title[Short Title]{Presentation Slide Template}
 \author[Changhyun Kwon]{Changhyun Kwon}
 \institute[USF IMSE]{Department of Industrial \& Management Systems Engineering\\University of South Florida}
-\date{August 21, 2015}
+\date{October 19, 2017}
 
 
 \begin{document}
@@ -237,6 +240,42 @@ Hello theorem
 \]
 \end{theorem}
 \end{frame}
+
+\begin{frame}
+\frametitle{Theorems}
+
+\begin{theorem}
+Hello theorem, you can put ``pause'' anywhere
+\pause
+\[
+	\sum_{i=1}^n x_i = 1
+\]
+\end{theorem}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[Figures]{Figures}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Image Overlaying}
+\begin{center}
+\includegraphics<1>[width=0.7\textwidth]{image-a}
+\includegraphics<2>[width=0.7\textwidth]{image-b}
+\includegraphics<3>[width=0.7\textwidth]{image-c}
+\end{center}
+\end{frame}
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
