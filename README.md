@@ -22,3 +22,9 @@ Converted from the [USF Motion Powerpoint Template](http://www.usf.edu/ucm/docum
 Converted from the [USF Sun and Globe Powerpoint Template](http://www.usf.edu/ucm/documents/usf-sun-and-globe-template.pptx), created by the [University Communications and Marketing](http://www.usf.edu/ucm/marketing/brand.aspx/design-templates/powerpoint/motion/).
 
 <img src="Sun_Globe_Screenshot.png" width="600">
+
+## USF Simple Template
+
+A simple template that tries to be informative but not distracting, created by [Garrick Aden-Buie](http://garrickadenbuie.com).
+
+<img src="simple-screenshot.png" width="600">
