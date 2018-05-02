@@ -9,6 +9,11 @@ Similar to the [Univesity at Buffalo Beamer Template](https://github.com/chkwon/
 
 <img src="Bull_Screenshot.png" width="600">
 
+## USF Black and White template
+
+A very simple black and white template, createdy by Changhyyun Kwon
+
+<img src="Black_White_Screenshot.png" width="600">
 
 ## USF Motion Template
 
