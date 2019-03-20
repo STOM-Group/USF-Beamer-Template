@@ -20,3 +20,10 @@ A very simple black and white template, createdy by Changhyyun Kwon
 A simple template that tries to be informative but not distracting, created by [Garrick Aden-Buie](http://garrickadenbuie.com).
 
 <img src="simple-screenshot.png" width="600">
+
+
+## USF Poster template
+
+This is a simple poster template using `beamer` for presentation.
+
+<img src="poster-screenshot.png" width="600">
