@@ -24,11 +24,12 @@
 
 \include{usf_colors}
 
-\setbeamercolor{usflogo}{fg=USFgold,bg=USFgreen}
+\setbeamercolor{usflogo}{fg=USFyellow,bg=USFgreen}
 \setbeamercolor{section in head/foot}{fg=USFgreen,bg=USFgold}
 
-\setbeamercolor{structure}{fg=TealGreen,bg=}
-
+\setbeamercolor{structure}{fg=USFgreen,bg=}
+\setbeamercolor{title}{fg=USFyellow,bg=USFgreen}
+\setbeamercolor{frametitle}{fg=USFyellow,bg=USFgreen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -47,10 +48,10 @@
 \setcounter{subsection}{1}
 
 \setbeamertemplate{headline}{
-	\begin{beamercolorbox}{usflogo}\vskip5pt
-		\hskip10pt
-		\includegraphics[height=0.13in]{usf-h-gold.pdf}
-		\raisebox{1.3ex}{\fontsize{5}{6}\selectfont\sffamily\color{USFgold} \ \ \textbar \ \ Industrial and Management Systems Engineering}
+	\begin{beamercolorbox}{usflogo}\vskip2pt
+		\hskip5pt
+		\includegraphics[height=0.2in]{usf-logo2-yellow.pdf}
+		\raisebox{1.3ex}{\fontsize{5}{6}\selectfont\sffamily \ \ \textbar \ \ Industrial and Management Systems Engineering}
 		\vskip5pt
 	\end{beamercolorbox}
 	\begin{beamercolorbox}{section in head/foot}\vskip2pt\insertsectionnavigationhorizontal{\paperwidth}{}{}\vskip2pt\end{beamercolorbox}
@@ -58,10 +59,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%% UB CREST Background %%%%%%%%%%%%%%%%%%%%%%
+%%%%% UB CREST Background %%%%%%%%%%%%%%%%%%%%%%
 \usebackgroundtemplate{%
-\tikz[overlay,remember picture] \node[opacity=0.05, inner sep=0, anchor=center, at=(current page.center)] {
-   \includegraphics[height=2.5in]{u-bulls-gray.pdf}};
+\tikz[overlay,remember picture] \node[opacity=0.05, inner sep=0, anchor=center, at=(current page.center), yshift=-0.5in] {
+   \includegraphics[height=2.5in]{usf-bull.pdf}};
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
