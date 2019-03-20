@@ -22,13 +22,13 @@
 
 % Set \columnheight slight smaller than height above.
 \newlength{\columnheight}
-\setlength{\columnheight}{60cm}
+\setlength{\columnheight}{65cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \title{The very very very long poster title is placed here}
 \author{Changhyun Kwon, First Name Last Name}
-\institute{University of South Florida}
+\institute{University of South Florida, Department of Industrial and Management Systems Engineering}
 \date{\today}
 
 
@@ -94,6 +94,18 @@
   \end{block}
 
 
+  \begin{block}{Block Title Here}
+  	\begin{itemize}
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\end{itemize}
+  \end{block}
+  
+
+
 %%%%%%%%%%%%%%%%%%%%
 }
 \end{minipage}
@@ -129,6 +141,28 @@
   \end{block}
 
 
+  \begin{block}{Block Title Here}
+  	\begin{itemize}
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\end{itemize}
+  \end{block}
+  
+  \begin{block}{Block Title Here}
+  	\begin{itemize}
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\end{itemize}
+  \end{block}
+
+
+
 %%%%%%%%%%%%%%%%%%%%
 }
 \end{minipage}
@@ -143,60 +177,91 @@
 %%%%%%%%%%%%%%%%%%%%
 
 
-
-
-
-\begin{block}{Results}
-  \begin{table} \centering \footnotesize
-  \begin{tabular}{|c|c|c|c|c|c|}
-  \hline
-  $(w_1,w_2,w_3)$ & Risk & Delay (regular) & Delay (hazmat) & Toll (regular) & Toll (hazmat)\\ \hline
-  $(10^{-4},1,1)$ & $-15.09 \%$ & $3.95 \% $ & $-0.27\% $ & $1.29 \times 10^9 $ & $1.66 \times 10^3$\\
-  \hline
-  $(10^{-3},1,1)$ & $-22.07 \%$ & $4.68 \% $ & $-1.39\% $ & $1.31 \times 10^9$ & $1.66 \times 10^3$\\
-  \hline
-  $(1,1,1)$ & $-24.70\%$ & $22.61\% $ & $-39.61\% $ & $5.29 \times 10^6$ & $0$\\ \hline
-  $(10^2,1,1)$ & $-24.70 \%$ & $25.99 \% $ & $-39.52\% $ &$0$  & $0$\\
-  \hline $(10^5,1,1)$ & $-24.70 \%$ & $25.99 \% $ & $-39.52\% $ & $0$
-  & $0$
-  \\
-  \hline
-  \end{tabular}
-  \caption{Results with various $w_1$ with given $w_2 = 1$ and $w_3 =1$}
-  \label{tbl:result1} 
-  \end{table}
+  \begin{block}{Results}
+    \begin{table} \centering \footnotesize
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $(w_1,w_2,w_3)$ & Risk & Delay (regular) & Delay (hazmat) & Toll (regular) & Toll (hazmat)\\ \hline
+    $(10^{-4},1,1)$ & $-15.09 \%$ & $3.95 \% $ & $-0.27\% $ & $1.29 \times 10^9 $ & $1.66 \times 10^3$\\
+    \hline
+    $(10^{-3},1,1)$ & $-22.07 \%$ & $4.68 \% $ & $-1.39\% $ & $1.31 \times 10^9$ & $1.66 \times 10^3$\\
+    \hline
+    $(1,1,1)$ & $-24.70\%$ & $22.61\% $ & $-39.61\% $ & $5.29 \times 10^6$ & $0$\\ \hline
+    $(10^2,1,1)$ & $-24.70 \%$ & $25.99 \% $ & $-39.52\% $ &$0$  & $0$\\
+    \hline $(10^5,1,1)$ & $-24.70 \%$ & $25.99 \% $ & $-39.52\% $ & $0$
+    & $0$
+    \\
+    \hline
+    \end{tabular}
+    \caption{Results with various $w_1$ with given $w_2 = 1$ and $w_3 =1$}
+    \label{tbl:result1} 
+    \end{table}
+    
+    \begin{table} \centering
+    \footnotesize
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $(w_1,w_2,w_3)$ & Risk & Delay (regular) & Delay (hazmat) & Toll (regular) & Toll (hazmat)\\ \hline
+    $(1,1,1)$ & $-24.70\%$ & $22.61\% $ & $-39.61\% $ & $5.29 \times 10^6$ & $0$\\ \hline
+    $(1,10^5,1)$ & $-5.23\%$ & $2.86 \% $ & $4.89\% $ & $2.87 \times 10^8$ & $0$\\
+    \hline
+    $(1,10^8,1)$ & $-4.41 \%$ & $2.81 \% $ & $5.58\% $ & $2.62 \times 10^8$ & $0$\\
+    \hline
+    $(1,10^{12},1)$ & $-4.41 \%$ & $2.81 \% $ & $5.58\% $ & $2.62 \times 10^8$ & $0$\\
+    \hline
+    \end{tabular}
+    \caption{Results with various $w_2$ with given $w_1 = 1$ and $w_3 =1$} 
+    \label{tbl:result2} 
+    \end{table}
+    
+    \begin{table} \centering
+    \footnotesize
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $(w_1,w_2,w_3)$ & Risk & Delay (regular) & Delay (hazmat) & Toll (regular) & Toll (hazmat)\\ \hline
+    $(10^{-4},1,10^5)$ & $-22.52 \%$ & $3.06 \% $ & $-11.9\% $ & $3.30 \times 10^7$ & 0\\
+    \hline
+    \end{tabular}
+    \caption{Results with $(w_1, w_2,w_3)=(10^{-4}, 1 , 10^4)$}
+    \label{tbl:result3}
+    \end{table}
   
-  \begin{table} \centering
-  \footnotesize
-  \begin{tabular}{|c|c|c|c|c|c|}
-  \hline
-  $(w_1,w_2,w_3)$ & Risk & Delay (regular) & Delay (hazmat) & Toll (regular) & Toll (hazmat)\\ \hline
-  $(1,1,1)$ & $-24.70\%$ & $22.61\% $ & $-39.61\% $ & $5.29 \times 10^6$ & $0$\\ \hline
-  $(1,10^5,1)$ & $-5.23\%$ & $2.86 \% $ & $4.89\% $ & $2.87 \times 10^8$ & $0$\\
-  \hline
-  $(1,10^8,1)$ & $-4.41 \%$ & $2.81 \% $ & $5.58\% $ & $2.62 \times 10^8$ & $0$\\
-  \hline
-  $(1,10^{12},1)$ & $-4.41 \%$ & $2.81 \% $ & $5.58\% $ & $2.62 \times 10^8$ & $0$\\
-  \hline
-  \end{tabular}
-  \caption{Results with various $w_2$ with given $w_1 = 1$ and $w_3 =1$} 
-  \label{tbl:result2} 
-  \end{table}
+  \end{block}
   
-  \begin{table} \centering
-  \footnotesize
-  \begin{tabular}{|c|c|c|c|c|c|}
-  \hline
-  $(w_1,w_2,w_3)$ & Risk & Delay (regular) & Delay (hazmat) & Toll (regular) & Toll (hazmat)\\ \hline
-  $(10^{-4},1,10^5)$ & $-22.52 \%$ & $3.06 \% $ & $-11.9\% $ & $3.30 \times 10^7$ & 0\\
-  \hline
-  \end{tabular}
-  \caption{Results with $(w_1, w_2,w_3)=(10^{-4}, 1 , 10^4)$}
-  \label{tbl:result3}
-  \end{table}
-
-\end{block}
-
+  
+  
+  \begin{block}{Block Title Here}
+  	\begin{itemize}
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\end{itemize}
+  \end{block}
+  
+  
+  \begin{block}{Block Title Here}
+  	\begin{itemize}
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\end{itemize}
+  \end{block}
+  
+  
+  
+  \begin{block}{Block Title Here}
+  	\begin{itemize}
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\item abcdefg
+  	\end{itemize}
+  \end{block}
 
 
 
