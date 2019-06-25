@@ -10,8 +10,8 @@ A general beamer theme. [demo](https://github.com/STOM-Group/USF-Beamer-Template
 ## USF Theme
 
 A Tampa-variant including USF logo
-- USFgold [demo]([demo](https://github.com/STOM-Group/USF-Beamer-Template/raw/master/USF-beamer-theme/USFgold-example.pdf)
-- USFblack [demo]([demo](https://github.com/STOM-Group/USF-Beamer-Template/raw/master/USF-beamer-theme/USFblack-example.pdf)
+- USFgold [demo](https://github.com/STOM-Group/USF-Beamer-Template/raw/master/USF-beamer-theme/USFgold-example.pdf)
+- USFblack [demo](https://github.com/STOM-Group/USF-Beamer-Template/raw/master/USF-beamer-theme/USFblack-example.pdf)
 
 ## USF Poster template
 
