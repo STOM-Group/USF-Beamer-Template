@@ -1,0 +1,199 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+
+
+
+\title{Presentation Slide Template}
+\author[C Kwon]{Someone Else\inst{1} \and Changhyun Kwon\inst{2}}
+\institute[USF]{
+  \inst{1}Department of XXX\\University of YYYY
+  \and
+  \inst{2}Department of Industrial and Management Systems Engineering\\University of South Florida}
+\date[CONFERENCE 2020]{Very Important Conference 2020}
+
+
+% The below command may be necessary, if usflogo is used.
+% \department{Industrial and Management Systems Engineering} 
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newtheorem{theorem}{THEOREM}
+%\newtheorem{lemma}{LEMMA}
+%\newtheorem{proposition}{PROPOSITION}
+%\newtheorem{assumption}{ASSUMPTION}
+%\newtheorem{corollary}{COROLLARY}
+%\newtheorem{example}{EXAMPLE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Custom Packages and Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mwe}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{bbold}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+
+\usepackage{etoolbox}
+\makeatletter
+\def\do#1{\@namedef{#1c}{\ensuremath{\mathcal{#1}}}}
+\docsvlist{A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
+\makeatother
+
+\makeatletter
+\def\do#1{\@namedef{#1b}{\ensuremath{\mathbb{#1}}}}
+\docsvlist{A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
+\makeatother
+
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\blue}[1]{{\color{blue}#1}}
+\newcommand{\green}[1]{{\color{green!60!white}#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\everymath{\displaystyle}
+
+\begin{document}
+
+
+% Title page
+\frame[plain]{\titlepage}
+
+
+
+
+
+\section[INTRO]{Introduction}
+
+\begin{frame}
+
+   \begin{block}{This is a Block}
+      This is important information
+   \end{block}
+
+   \begin{alertblock}{This is an Alert block}
+   This is an important alert
+   \end{alertblock}
+
+   \begin{exampleblock}{This is an Example block}
+   This is an example 
+   \end{exampleblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{SLIDE TITLE...}
+
+Hello $\int_0^x y dy$ \alert<2>{ddd}
+\begin{itemize}
+\item Queen $x^2 + y^2 = z^2$
+\item Hello World
+\item Good Morning
+\item Good Night
+\end{itemize}
+
+\begin{itemize}
+\item<1-> Hello \alert{World}
+
+\begin{itemize}
+\item Hello \alert{World}
+\item Good \alert{Morning}
+\item Good \alert{Night}
+\end{itemize}
+
+
+\item<2-> Good \alert{Morning}
+\item<3-> Good \alert{Night}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{THEOREMS}
+
+\begin{theorem}
+Hello theorem
+\[
+	\sum_{i=1}^n x_i = 1
+\]
+\end{theorem}
+\end{frame}
+
+\begin{frame}
+\frametitle{THEOREMS}
+
+\begin{theorem}
+Hello theorem, you can put ``pause'' anywhere
+\pause
+\[
+	\sum_{i=1}^n x_i = 1
+\]
+\end{theorem}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[FIGURES]{Figures}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{IMAGE OVERLAY}
+\begin{center}
+\includegraphics<1>[width=0.7\textwidth]{image-a}
+\includegraphics<2>[width=0.7\textwidth]{image-b}
+\includegraphics<3>[width=0.7\textwidth]{image-c}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[CONCLUSION]{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[standout]
+\frametitle{GOODBYE}
+
+Good bye world.
+
+\end{frame}
+
+
+
+
+
+\end{document}

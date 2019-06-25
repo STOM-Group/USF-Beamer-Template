@@ -1,0 +1,159 @@
+
+
+
+
+% Title page
+\frame[plain]{\titlepage}
+
+
+
+
+
+\section[INTRO]{Introduction}
+
+\begin{frame}
+
+   \begin{block}{This is a Block}
+      This is important information
+   \end{block}
+
+\pause
+
+   \begin{alertblock}{This is an Alert block}
+   This is an important alert
+   \end{alertblock}
+
+\pause
+
+   \begin{exampleblock}{This is an Example block}
+   This is an example 
+   \end{exampleblock}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{SLIDE TITLE...}
+
+Hello $\int_0^x y dy$ \alert<2>{ddd}
+\begin{itemize}
+\item Queen $x^2 + y^2 = z^2$
+\item Hello World $\mat{A}^\top \vec{x} = \vec{0}$
+\item Good Morning $a\in\Ac$, $n\in\Nc$, $\Bb$, $\Eb$
+\item Good Night $\sum_{(i,j)\in\Ac} x_{ij} y_{ij} \leq 1$ 
+\end{itemize}
+
+\begin{itemize}
+\item<1-> Hello \alert{World}
+\item<2-> Good \alert{Morning}
+\item<3-> Good \alert{Night}
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{LISTS...}
+\texttt{itemize:}
+\begin{itemize}
+\item Hello \alert{World}
+\item Good \alert{Morning}
+
+  \begin{itemize}
+  \item Hello \alert{World}
+  \item Good \alert{Morning}
+  
+    \begin{itemize}
+    \item Hello \alert{World}
+    \item Good \alert{Morning}
+    \end{itemize}
+  
+  \end{itemize}
+
+\end{itemize}
+
+
+\texttt{enumerate:}
+\begin{enumerate}
+\item Hello World
+\item Good Morning
+\end{enumerate}
+
+\texttt{description:}
+\begin{description}
+\item [Hello] World
+\item [Good] Morning
+\end{description}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{THEOREMS}
+
+\begin{theorem}
+Hello theorem
+\[
+	\sum_{i=1}^n x_i = 1
+\]
+\end{theorem}
+\end{frame}
+
+\begin{frame}
+\frametitle{THEOREMS}
+
+\begin{theorem}
+Hello theorem, you can put ``pause'' anywhere
+\pause
+\[
+	\sum_{i=1}^n x_i = 1
+\]
+\end{theorem}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[FIGURES]{Figures}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{IMAGE OVERLAY}
+\begin{center}
+\includegraphics<1>[width=0.7\textwidth]{image-a}
+\includegraphics<2>[width=0.7\textwidth]{image-b}
+\includegraphics<3>[width=0.7\textwidth]{image-c}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[CONCLUSION]{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{GOODBYE}
+
+Good bye world. \email{chkwon@usf.edu}
+
+\end{frame}
+
+
